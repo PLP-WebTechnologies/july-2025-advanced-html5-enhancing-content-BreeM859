@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web & Media Company</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Simple Web Page</h1>
+    <p>This page demonstrates HTML structure with no CSS or JavaScript. It includes lists, tables, media (image, audio, and video), and a complete HTML5 form with validation.</p>
+  </header>
+
+  <main>
+
+    <!-- Section: List -->
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Design</li>
+        <li>Development</li>
+        <li>SEO Optimization</li>
+        <li>Accessibility Audits</li>
+      </ul>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+      <h2>Popular Plans</h2>
+      <p>Choose the plan that best fits your needs. All plans include free setup and migration assistance.</p>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Features</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>Email Support, 1 Project</td>
+            <td>$9/mo</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>Priority Support, 5 Projects</td>
+            <td>$29/mo</td>
+          </tr>
+          <tr>
+            <td>Enterprise</td>
+            <td>Dedicated Manager, Unlimited Projects</td>
+            <td>$99/mo</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Image Media -->
+    <section>
+      <h2>Meet Our Team</h2>
+      <p>Below is a group photo of our amazing staff:</p>
+      <img src="https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg" height=25% width=50% alt="Our Team Photo">
+    </section>
+
+    <!-- Section: Audio and Video -->
+    <section>
+      <h2>Media Content</h2>
+
+      <h3> Intro Audio</h3>
+      <audio controls preload="metadata">
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3> Promo Video</h3>
+      <video width="600" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section: Contact Form -->
+    <section>
+      <h2>Contact Us</h2>
+      <p>Ready to get started? Fill out the form below and we'll get back to you within <strong>24 hours</strong>.</p>
+
+      <form action="/submit" method="post" aria-labelledby="form-title">
+        <fieldset>
+          <legend id="form-title">Contact Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Jane Doe" autocomplete="name"><br><br>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email"><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9\-]{7,15}" placeholder="123-456-7890" autocomplete="tel"><br><br>
+
+          <label for="age">Your Age:</label>
+          <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+          <label for="password">Create Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters"><br><br>
+
+          <label for="website">Website (optional):</label>
+          <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Details</legend>
+
+          <label for="interest">Area of Interest:</label>
+          <select id="interest" name="interest" required>
+            <option value="">--Select--</option>
+            <option value="design">Design</option>
+            <option value="development">Development</option>
+            <option value="seo">SEO</option>
+          </select><br><br>
+
+          <p>Preferred Contact Method:</p>
+          <input type="radio" id="contact-email" name="contact_method" value="email" required>
+          <label for="contact-email">Email</label><br>
+          <input type="radio" id="contact-phone" name="contact_method" value="phone">
+          <label for="contact-phone">Phone</label><br><br>
+
+          <label for="message">Your Message:</label><br>
+          <textarea id="message" name="message" rows="5" cols="40" required minlength="10" placeholder="Write your message here..."></textarea><br><br>
+
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">I agree to the terms and privacy policy</label><br><br>
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Web & Media Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
